@@ -1,0 +1,27 @@
+// Дано вещественное число A и целое число N (> 0). Используя один цикл, найти сумму 1 + A + A2 + A3 + . . . + AN
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+int main()
+{
+  int N;
+  float A,i,x;
+  cout << "A = " ;
+  cin >> A;
+  cout << "N = ";
+  cin >> N;
+  if (N > 0)
+  {
+  x=0;
+    for (i=0; i<N; i=i+1)
+        {
+           x=x+pow(A,i);
+        }
+    cout << "Sum = " << x;
+  }
+  else
+  {
+      cout << "Error" ;
+  }
+}

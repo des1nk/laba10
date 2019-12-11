@@ -1,0 +1,16 @@
+// Дано вещественное число — цена 1 кг конфет. Вывести стоимость 0.1, 0.2, . . . , 1 кг конфет.
+#include <iostream>
+#include <string>
+using namespace std;
+int main()
+{
+  int x;
+  float i;
+  cout << "1kg = ";
+  cin >> x;
+  for (i=1; i<=10; i=i+1)
+  {
+  cout << "---------------\n"<< i/10 << "kg = " << (i/10)*x << " rub\n";
+  }
+  cout << "---------------\n";
+}
